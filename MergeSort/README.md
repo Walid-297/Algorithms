@@ -159,6 +159,17 @@ The `Merge()` method:
 
 ---
 
+## 🔄 Call Stack example
+
+MergeSort(0, 3)
+├── MergeSort(0, 1)
+│   ├── MergeSort(0, 0)
+│   └── MergeSort(1, 1)
+└── MergeSort(2, 3)
+    ├── MergeSort(2, 2)
+    └── MergeSort(3, 3)
+---
+
 ## 📊 Complexity Analysis
 
 | Complexity Type | Value |
