@@ -44,7 +44,7 @@ Algorithms/
 
 ---
 
-# Algorithms Included
+# Implemented Algorithms
 
 ## Sorting Algorithms
 
@@ -65,44 +65,48 @@ Algorithms/
 
 ## Greedy Algorithms
 
-| Algorithm | Problem Solved |
-|-----------|----------------|
-| Activity Selection | Maximum compatible activities |
-| Fractional Knapsack | Maximum value under weight constraint |
-| Huffman Coding | Lossless data compression |
-| Prim's Algorithm | Minimum Spanning Tree |
+| Algorithm | Problem Solved | Time Complexity |
+|-----------|----------------|-----------------|
+| Activity Selection | Maximum compatible activities | O(n log n) |
+| Fractional Knapsack | Maximum value under weight constraint | O(n log n) |
+| Huffman Coding | Lossless data compression | O(n log n) |
+| Prim's Minimum Spanning Tree | Minimum Spanning Tree | O(V²)* |
+
+> *This implementation uses an adjacency matrix. Using a priority queue would improve the complexity to **O((V + E) log V)**.
 
 ---
 
 ## Dynamic Programming
 
-| Algorithm | Problem Solved |
-|-----------|----------------|
-| Stagecoach Problem | Multi-stage shortest path |
-| Longest Common Subsequence | Sequence similarity |
-| 0-1 Knapsack | Optimal resource allocation |
+| Algorithm | Problem Solved | Time Complexity |
+|-----------|----------------|-----------------|
+| Stagecoach Problem | Multi-stage shortest path | O(n²) |
+| Longest Common Subsequence (LCS) | Sequence similarity | O(m × n) |
+| 0-1 Knapsack | Optimal resource allocation | O(n × W) |
+
+> **W** represents the maximum knapsack capacity.
 
 ---
 
 ## Graph Algorithms
 
-| Algorithm | Purpose |
-|-----------|----------|
-| Graph Representation | Adjacency Matrix & Adjacency List |
-| Breadth-First Search (BFS) | Graph traversal & shortest path in unweighted graphs |
-| Depth-First Search (DFS) | Graph traversal & connectivity |
-| Dijkstra's Algorithm | Single-source shortest path |
+| Algorithm | Purpose | Time Complexity |
+|-----------|----------|-----------------|
+| Graph Representation | Adjacency Matrix & Adjacency List | O(1)* |
+| Breadth-First Search (BFS) | Graph traversal & shortest path in unweighted graphs | O(V + E) |
+| Depth-First Search (DFS) | Graph traversal & connectivity | O(V + E) |
+| Dijkstra's Shortest Path | Single-source shortest path | O(V²)* |
+
+> *The current implementations use an adjacency matrix. A priority queue implementation of Dijkstra's algorithm runs in **O((V + E) log V)**.
 
 ---
 
 ## String Algorithms
 
-| Algorithm | Purpose |
-|-----------|----------|
-| Character Frequencies I | ASCII frequency counting |
-| Character Frequencies II | Hash-based frequency counting with Merge Sort |
-
----
+| Algorithm | Purpose | Time Complexity |
+|-----------|----------|-----------------|
+| Character Frequencies I | ASCII frequency counting | O(n) |
+| Character Frequencies II | Hash-based frequency counting with Merge Sort | O(n log n) |
 
 # Technologies
 
